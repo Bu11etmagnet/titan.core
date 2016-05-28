@@ -97,6 +97,9 @@ endif # CYGWIN
 ifeq ($(PLATFORM1), Interix)
   PLATFORM := INTERIX
 endif # Interix
+ifeq ($(PLATFORM1), Darwin)
+  PLATFORM := DARWIN
+endif # Interix
 endif # ifndef PLATFORM
 ifndef PLATFORM
 	PLEASE CHECK THE ABOVE PLATFORM SETTINGS!!!
